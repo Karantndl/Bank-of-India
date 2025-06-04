@@ -1,0 +1,178 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!--nab bar-->
+
+    <nav class="navbar">
+      <div class="navbar_div">
+        <div class="logo_div">
+          <a href="../index.html"
+            ><img class="logopic" src="../Pictures/background logo1.png" alt=""
+          /></a>
+        </div>
+
+        <div class="navbarUl_list_div">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about us/index.html">About us</a></li>
+            <li><a href="./index.html">Contact us</a></li>
+            <li><a href="../other service/index.html">Services</a></li>
+            <button class="loginbtn">Login</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--            main content -->
+
+    <div id="contact-form" class="container">
+      <form class="contact-form">
+        <div><h1>Contact Bank of india</h1></div>
+
+        <div class="subject-drop">
+          <label for="subject">Subject:</label>
+
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Please select</option>
+            <option value="cards">Cards</option>
+            <option value="internet_banking">Internet Banking</option>
+            <option value="my_account">My Account</option>
+            <option value="updating_data">Updating Data</option>
+            <option value="operations">Operations</option>
+            <option value="mobile_app">Mobile Application</option>
+          </select>
+
+          <div class="form-group">
+            <div><label for="name">Name:</label></div>
+            <div class="FLname">
+              <div style="width: 100%">
+                <input
+                  type="text"
+                  name="name"
+                  id="fname"
+                  placeholder="First"
+                  required
+                />
+                <div>
+                  <span class="error-form" id="Fn-error-message"></span>
+                </div>
+              </div>
+              <div style="width: 100%">
+                <input
+                  type="text"
+                  name="name"
+                  id="lname"
+                  placeholder="Last"
+                  required
+                />
+                <div>
+                  <span class="error-form" id="Ln-error-message"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div><label for="email">Email Address:</label></div>
+            <div><input type="email" name="email" id="email" required /></div>
+            <div><span class="error-form" id="email-error-message"></span></div>
+          </div>
+
+          <div class="form-group">
+            <div><label for="number">phone number:</label></div>
+            <div>
+              <input
+                id="number"
+                type="number"
+                name="number"
+                placeholder="### ### ###"
+                required
+              />
+              <div>
+                <span class="error-form" id="number-error-message"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div><label for="message">Message:</label></div>
+            <div>
+              <input class="messagebox" type="text" id="message" required />
+            </div>
+            <div>
+              <span class="error-form" id="message-error-message"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button id="submit" class="submit-btn" type="submit" name="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--                        Footer FAQ etc..                     -->
+
+    <div class="footer_div">
+      <div class="footer_ourProud_div">
+        <h1>Our products</h1>
+        <p><a href="#">Current Account</a></p>
+        <p><a href="#">Savings</a></p>
+        <p><a href="#">Loans</a></p>
+        <p><a href="#">Mortgages</a></p>
+        <p><a href="#">Insurance</a></p>
+        <p><a href="#">Credit Cards</a></p>
+      </div>
+
+      <div class="footer_help_div">
+        <h1>Help</h1>
+        <p><a href="../FAQ/index.html">Help & FAQs</a></p>
+        <p><a href="#">Report fraud or a scams</a></p>
+        <p><a href="#">Report card stolen or loss </a></p>
+      </div>
+
+      <div class="footer_information_div">
+        <h1>Site information</h1>
+        <p><a href="#">Important information</a></p>
+        <p><a href="#">Accessibility </a></p>
+        <p><a href="#">Privacy policy </a></p>
+        <p><a href="#">Cookie policy </a></p>
+        <p><a href="#">Security </a></p>
+      </div>
+
+      <div class="footer_findUs_div">
+        <h1>Find Us</h1>
+        <p><a href="#">Find Bank of India </a></p>
+        <p>
+          <a
+            href="https://www.instagram.com/karan.tndl/profilecard/?igsh=cTEwemVkNmgxYmU0"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/Karantndl">
+            <i class="fa-brands fa-github"></i> Github
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/karankesrichand?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          >
+            <i class="fa-brands fa-linkedin"></i> Linkedin
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="contact us.js"></script>
+  </body>
+</html>

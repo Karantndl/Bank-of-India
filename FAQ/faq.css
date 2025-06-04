@@ -1,0 +1,321 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161b2f;
+    color: #fff;
+}
+
+/* nav bar property */
+
+.navbar{
+    background-color: #161b2f;
+    font-family: Arial, sans-serif;
+    padding: 20px 20px; /*nav bar size control*/
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo_div{
+    width: 150px; 
+    height: auto; 
+    padding: 0; 
+    margin-left: 100px;
+    
+}
+
+.logopic{
+    max-width: 100%;
+    max-height: 100%;
+   
+    
+}
+
+.navbarUl_list_div{
+    padding: 0;
+    margin-right: 15px;
+}
+
+ul {
+    display: flex; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    transition: color 0.2s, transform 0.2s;
+
+    
+}
+
+li{
+    list-style: none; display: inline-block;
+    transition: color 0.2s, transform 0.2s;
+
+}
+
+li a{
+    color: #3696fc;
+    font-weight: bold;
+    margin-right: 25px;
+    font-family: arial;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+
+}
+
+.loginbtn{
+    color: #161b2f;
+    border: none;
+    font-size: 16px;
+    background-color: #3696fc;
+    border-radius: 16px;
+    height: 38px;
+    width: 90px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+}
+
+.loginbtn:hover{
+    background-color: #fff; 
+    color: #3696fc;
+    border: 2px solid black;
+    border-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li a:hover {
+    color: #fff; 
+    transform: scale(1.1); 
+}
+
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* end of nav bar*/
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backgroundimg{
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+    background-image: url('picture\ FAQ/search-hero-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundimg p{
+    font-size: 46px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-wrapper{
+    position: relative;
+}
+
+.search-btn{
+    position: absolute;
+    top: 21%;
+    right: 3%;
+}
+.search-input {
+    width: 100%; 
+    height: 70px;
+    font-size: 1.5rem;
+    border: 1px solid #c8c8c8;
+    padding: 10px; 
+    box-sizing: border-box; 
+    border-color: #c8c8c8;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px 10px 10px 15px;
+}
+
+.search-wrapper button{
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    background-color: #0074a6;
+    border-radius: 22px;
+    height: 44px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.search-wrapper button:hover{
+    background-color: #005D85;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; /* Hides the x which used to clear search box button in Chrome and Safari */
+    display: none; }
+
+/* popular question*/
+.parent-popular-question{
+    display: flex;
+    margin: 25px 20px;
+}
+.child-popular-questions{
+    width: 59%;
+    height: auto;
+    margin-left: 21%;
+}
+
+.child-popular-questions h1{
+    font-size: 36px;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 15px 30px 15px;
+    cursor: pointer;
+}
+.child-popular-questions p{
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,;
+    transition: color 0.2s, text-decoration 0.2s;
+
+}
+
+.child-popular-questions p:hover{
+    text-decoration: underline; 
+    color: #3696fc;
+}
+/*grid property*/
+.grid-parent{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.items{
+    background-color: #292b3d;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 12 24 12;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+}
+
+.items :hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #323448;
+    transform: translateY(-10px);
+}
+
+
+.items p{
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,;
+
+
+}
+
+.items p:hover {
+    text-decoration: underline; 
+    color: #3696fc;
+}
+
+.items h3{
+    font-size: 30px;
+
+}
+
+.items i{
+    width: 100%;
+    height: auto;
+}
+
+.items button{
+    color: #3696fc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161b2f;
+    border: 2px solid #3696fc;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.items i {
+    font-size: 50px; 
+    color: #3696fc; 
+    margin: 10px 0; 
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+}
+.items button:hover {
+    background-color: #3696fc; 
+    color: #fff;
+    border: 2px solid #161b2f;
+    border-color: #161b2f;
+}
+
+
+/* footer property*/
+
+.footer_div{
+    background-color: #292b3d;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 115px 0px 110px;
+    margin-top: 60px;
+}
+
+.footer_ourProud_div .footer_help_div .footer_information_div .footer_findUs_div{
+    flex: 1;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.footer_ourProud_div h1, .footer_help_div h1, .footer_information_div h1, .footer_findUs_div h1{
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.footer_ourProud_div a, .footer_help_div a, .footer_information_div a, .footer_findUs_div a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+
+.footer_ourProud_div a:hover
+,.footer_help_div a:hover
+,.footer_information_div a:hover
+,.footer_findUs_div a:hover{
+    opacity: 0.7;
+
+}

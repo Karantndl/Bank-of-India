@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgages Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="navbar_div">
+    
+            <div class="logo_div"> 
+                <a href="../index.html"><img class="logopic"  src="../Pictures/background logo1.png" alt=""></a>
+            </div>
+    
+            <div class="navbarUl_list_div">
+                <ul>    
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about us/index.html">About us</a></li>
+                    <li><a href="../contact us/index.html">Contact us</a></li>
+                    <li><a href="../other service/index.html">Services</a></li>
+                    <button class="loginbtn">Login</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Calculator_affordability">
+
+            <div class="cal_color"></div>
+            <div class="cal_content">
+                <h1 style="margin: 0px; font-size: 40px;">Mortgages Calculator</h1>
+                <p>See how much you can borrow</p>
+            </div>
+        </div>
+
+    <div class="main_container">
+
+        <div class="affordability_text">
+            <p>Our affordability Calculator will help determine weather 
+                your ready to buy a <br> house, base on your incame and outgoing
+            </p>
+        </div>
+    </div>
+
+    <div class="main_container_text">
+        <div><p> <i class="fa-solid fa-check"></i> We can get rough estimation on how mcuh you can get</p></div>
+        <div><p> <i class="fa-solid fa-check"></i> No credit check do it won't effect your current credit score</p></div>
+        <div><p> <i class="fa-solid fa-check"></i> We won't save your personal information</p></div>
+    </div>
+
+
+    <div class="parent_div_dropdown">
+
+        <div class="selector">
+            <p style="font-size: 16; color: white;">What are you planning to do? </p>
+            <div id="selectFields">
+                <p id="selectedText">Buy my first house</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+
+            <div class="dropdown_color" >
+                <ul id="list" class="hide">
+                    <li class="options"><p">Buy my first house</p></li>
+                    <li class="options"><p>Buy a new house (selling the one i have)</p></li>
+                    <li class="options"><p>Buy an additional house</p></li>
+                    <li class="options"><p>Remoatgate to Bank of India</p></li>
+                    <li class="options"><p>get a Remoatgate on a i own outright</p></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="mortage_parent_div">
+            <form>
+
+                <div class="step step_1">
+                    <div class="form_group">
+                        <div id="mortage_main" class="mortage_child_div">
+                            <div><p>How many people are applying for a mortgage?</p></div>
+                            <div class="radio_btn">
+                                <input type="radio" name="people" value="1" id="rad1">
+                                <label for="rad1">1</label>
+            
+                                <input type="radio" name="people" value="2" id="rad2">
+                                <label for="rad1">2</label>
+            
+                                <input type="radio" name="people" value="3" id="rad3">
+                                <label for="rad1">3</label>
+            
+                                <input type="radio" name="people" value="4" id="rad4">
+                                <label for="rad1">4</label>
+                                <button type="button" id="start-btn">Start</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+     <!--                        Footer FAQ etc..                     -->
+
+  
+     <div class="footer_div">
+
+        <div class="footer_ourProud_div">
+            <h1>Our products</h1>
+            <p> <a href="#">Current Account</a> </p>
+            <p> <a href="#">Savings</a> </p>
+            <p> <a href="#">Loans</a> </p>
+            <p> <a href="#">Mortgages</a> </p>
+            <p> <a href="#">Insurance</a> </p>
+            <p> <a href="#">Credit Cards</a> </p>
+
+        </div>
+
+
+        <div class="footer_help_div">
+            <h1>Help</h1>
+            <p> <a href="../FAQ/index.html">Help & FAQs</a> </p>
+            <p> <a href="#">Report fraud or a scams</a> </p>
+            <p> <a href="#">Report card stolen or loss </a> </p>
+        </div>
+
+        <div class="footer_information_div">
+            <h1>Site information</h1>
+            <p> <a href="#">Important information</a> </p>
+            <p> <a href="#">Accessibility </a> </p>
+            <p> <a href="#">Privacy policy </a> </p>
+            <p> <a href="#">Cookie policy </a> </p>
+            <p> <a href="#">Security </a> </p>
+            
+        </div>
+
+        <div class="footer_findUs_div">
+            <h1>Find Us</h1>
+            <p> <a href="#">Find Bank of India </a> </p>
+            <p> <a href="https://www.instagram.com/karan.tndl/profilecard/?igsh=cTEwemVkNmgxYmU0"> <i class="fa-brands fa-instagram"></i> Instagram  </a> </p>
+            <p> <a href="https://github.com/Karantndl"> <i class="fa-brands fa-github"></i> Github </a> </p>
+            <p> <a href="https://www.linkedin.com/in/karankesrichand?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <i class="fa-brands fa-linkedin"></i> Linkedin </a> </p>
+        </div>
+
+
+
+
+     </div>
+
+<script src="Calculator.js"></script>
+    
+</body>
+</html>

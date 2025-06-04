@@ -1,0 +1,296 @@
+body {
+    background-color: #161b2f; /* background colour */
+    margin: 0; /* to remove background padding  */
+    text-decoration: none;
+
+}
+
+
+.navbar{
+    background-color: #161b2f;
+    font-family: Arial, sans-serif;
+    padding: 20px 20px; /*nav bar size control*/
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo_div{
+    width: 150px; 
+    height: auto; 
+    padding: 0; 
+    margin-left: 100px;
+    
+}
+
+.logopic{
+    max-width: 100%;
+    max-height: 100%;
+   
+    
+}
+
+.navbarUl_list_div{
+    padding: 0;
+    margin-right: 15px;
+}
+
+ul {
+    display: flex; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    transition: color 0.2s, transform 0.2s;
+
+    
+}
+
+li{
+    list-style: none; display: inline-block;
+    transition: color 0.2s, transform 0.2s;
+
+}
+
+li a{
+    color: #3696fc;
+    font-weight: bold;
+    margin-right: 25px;
+    font-family: arial;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+
+}
+
+.loginbtn{
+    color: #161b2f;
+    border: none;
+    font-size: 16px;
+    background-color: #3696fc;
+    border-radius: 16px;
+    height: 38px;
+    width: 90px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+}
+
+
+.loginbtn:hover{
+    background-color: #fff; 
+    color: #3696fc;
+    border: 2px solid black;
+    border-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li a:hover {
+    color: #fff; 
+    transform: scale(1.1); 
+}
+
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*end of nav bar */
+
+.Calculator_affordability{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292b3d;
+    height: 12em;
+}
+
+
+.cal_color{
+    background-color: #00aeef;
+    border: 2px solid #00aeef;
+    border-radius: 10px;
+    height: 6em;
+    width: 1px;
+}
+
+.cal_content{
+    padding-left: 1em;
+    
+}
+
+.cal_content h1{
+    color: #fff;
+}
+
+.cal_content p {
+    margin: 3px 0px 0px 0px;
+    font-size: 46px;
+    color: #cbccd1;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordability_text{
+    color: #fff;
+    font-family: arial;
+    font-size: 24px;
+}
+
+/* green ticks below such we can get rougly est.. */
+
+.main_container_text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    
+}
+
+.main_container_text p{
+    color: #fff;
+    height: fit-content;
+    font-size: 16px;
+    margin: 26px 0 0 0;
+    padding-left: 21em;
+    
+}
+
+.fa-check:before {
+    content: "\f00c";
+    color: green;
+    border: solid green 1px;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 2px;
+}
+   
+.parent_div_dropdown{
+    display: flex;
+    padding: 3em 0 0 21em;
+    align-items:center;
+    
+}
+
+.selector{
+    width: 350px;
+}
+
+#selectFields{
+    width: 100%;
+    font-size: 16px;
+    padding:15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background-color:#fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#selectFields i{
+    width: 12px;
+}
+
+#list{
+    display: inline;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.options{
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    list-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color:#fff;
+}
+
+
+.options:hover{
+    background-color: rgb(255, 255, 255, 0.8    );
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.mortage_parent_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+}
+
+
+.radio_btn button{
+    display: block;
+    height: 40px;
+    width: 40%;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-size: 17px;
+    background-color: #3696fc;
+    border: none;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+}
+
+.radio_btn button:hover{
+    background-color: #161b2f; 
+    color: #ccc;
+    border: 2px solid #3696fc;
+    border-color: #3696fc;
+}
+
+
+/* footer property*/
+
+.footer_div{
+    background-color: #292b3d;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 115px 30px 110px;
+}
+
+.footer_ourProud_div .footer_help_div .footer_information_div .footer_findUs_div{
+    flex: 1;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.footer_ourProud_div h1, .footer_help_div h1, .footer_information_div h1, .footer_findUs_div h1{
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.footer_ourProud_div a, .footer_help_div a, .footer_information_div a, .footer_findUs_div a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+.footer_ourProud_div a:hover
+,.footer_help_div a:hover
+,.footer_information_div a:hover
+,.footer_findUs_div a:hover{
+    opacity: 0.7;
+
+}

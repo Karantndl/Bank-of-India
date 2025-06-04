@@ -1,0 +1,182 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mortageCalculator</title>
+    <link rel="stylesheet" href="calcu-function.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_div">
+        <div class="logo_div">
+          <a href="../index.html"
+            ><img class="logopic" src="../Pictures/background logo1.png" alt=""
+          /></a>
+        </div>
+
+        <div class="navbarUl_list_div">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about us/index.html">About us</a></li>
+            <li><a href="../contact us/index.html">Contact us</a></li>
+            <li><a href="../other service/index.html">Services</a></li>
+            <button class="loginbtn">Login</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Calculator_affordability">
+      <div class="cal_color"></div>
+      <div class="cal_content">
+        <h1 style="margin: 0px; font-size: 40px">Mortgages Calculator</h1>
+        <p>See how much you can borrow</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <form>
+          <div class="step step_1 active">
+            <div class="form_group">
+              <div><p>The total amount the user wants to borrow</p></div>
+              <label for="loan_amount">Loan amount</label>
+              <input
+                type="number"
+                id="loan_amount"
+                name="loan_amount"
+                placeholder="e.g., £100,000"
+                required
+              />
+              <span
+                class="error-form"
+                id="loan_amount-error-message"
+                style="display: none; color: red; font-size: 12px"
+                >Loan amount must be greater than zero.</span
+              >
+            </div>
+            <div class="form_group">
+              <label for="loan_term">Loan Term in Years </label>
+              <input
+                type="number"
+                name="loan_term"
+                id="loan_term"
+                placeholder="25"
+                required
+              />
+            </div>
+            <button type="button" class="next-btn" id="nextBtn">Next</button>
+          </div>
+
+          <div class="step step_2">
+            <div class="form_group">
+              <div><p>Please tell us about your income</p></div>
+              <label for="basic_monthly_salary">Monthly salary </label>
+              <input
+                type="number"
+                id="basic_monthly_salary"
+                name="basic_monthly_salary"
+                required
+              />
+            </div>
+            <div class="form_group">
+              <label for="other_monthly_income">Other monthly income</label>
+              <input
+                type="number"
+                name="other_monthly_income"
+                id="other_monthly_income"
+                required
+              />
+            </div>
+            <button class="back-btn">Back</button>
+            <button class="next-btn">Next</button>
+          </div>
+
+          <div class="step step_3">
+            <div class="form_group">
+              <div>
+                <p>
+                  Other <span style="font-weight: bold">Monthly</span> financial
+                  obligations <br />(e.g., credit card payments, car loans,
+                  etc.)
+                </p>
+              </div>
+              <label for="other_financial"></label>
+              <input
+                type="number"
+                id="other_financial"
+                name="other_financial"
+                required
+              />
+            </div>
+            <button class="back-btn">Back</button>
+            <button onclick="submitBtn(event)" type="submit" class="submit-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <div id="results" class="after_result" style="display: none">
+          <!-- result should appear here         used display: none to hide this div until it get triggered in js  -->
+        </div>
+      </div>
+    </section>
+
+    <!--                        Footer FAQ etc..                     -->
+
+    <div class="footer_div">
+      <div class="footer_ourProud_div">
+        <h1>Our products</h1>
+        <p><a href="#">Current Account</a></p>
+        <p><a href="#">Savings</a></p>
+        <p><a href="#">Loans</a></p>
+        <p><a href="#">Mortgages</a></p>
+        <p><a href="#">Insurance</a></p>
+        <p><a href="#">Credit Cards</a></p>
+      </div>
+
+      <div class="footer_help_div">
+        <h1>Help</h1>
+        <p><a href="../FAQ/index.html">Help & FAQs</a></p>
+        <p><a href="#">Report fraud or a scams</a></p>
+        <p><a href="#">Report card stolen or loss </a></p>
+      </div>
+
+      <div class="footer_information_div">
+        <h1>Site information</h1>
+        <p><a href="#">Important information</a></p>
+        <p><a href="#">Accessibility </a></p>
+        <p><a href="#">Privacy policy </a></p>
+        <p><a href="#">Cookie policy </a></p>
+        <p><a href="#">Security </a></p>
+      </div>
+
+      <div class="footer_findUs_div">
+        <h1>Find Us</h1>
+        <p><a href="#">Find Bank of India </a></p>
+        <p>
+          <a
+            href="https://www.instagram.com/karan.tndl/profilecard/?igsh=cTEwemVkNmgxYmU0"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/Karantndl">
+            <i class="fa-brands fa-github"></i> Github
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/karankesrichand?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          >
+            <i class="fa-brands fa-linkedin"></i> Linkedin
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="calcu-function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </body>
+</html>

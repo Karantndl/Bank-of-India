@@ -1,0 +1,420 @@
+body {
+    background-color: #161b2f; /* background colour */
+    margin: 0; /* to remove background padding  */
+    text-decoration: none;
+
+}
+
+
+.navbar{
+    background-color: #161b2f;
+    font-family: Arial, sans-serif;
+    padding: 20px 20px; /*nav bar size control*/
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo_div{
+    width: 150px; 
+    height: auto; 
+    padding: 0; 
+    margin-left: 100px;
+    
+}
+
+.logopic{
+    max-width: 100%;
+    max-height: 100%;
+   
+    
+}
+
+.navbarUl_list_div{
+    padding: 0;
+    margin-right: 15px;
+}
+
+ul {
+    display: flex; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    transition: color 0.2s, transform 0.2s;
+    
+}
+
+li{
+    list-style: none; display: inline-block;
+    transition: color 0.2s, transform 0.2s;
+}
+
+li a{
+    color: #3696fc;
+    font-weight: bold;
+    margin-right: 25px;
+    font-family: arial;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.loginbtn{
+    color: #161b2f;
+    border: none;
+    font-size: 16px;
+    background-color: #3696fc;
+    border-radius: 16px;
+    height: 38px;
+    width: 90px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+}
+
+.loginbtn:hover{
+    background-color: #fff; 
+    color: #3696fc;
+    border: 2px solid black;
+    border-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li a:hover {
+    color: #fff; 
+    transform: scale(1.1); 
+}
+
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* hero content CSS */
+.heroContent_div{
+    height: auto;
+    width: 100%;
+    justify-items: center; /* to put the div2 in middle*/
+}
+
+.Container_for_two{
+    background-color: #4daeda;
+    height: 433px;
+    width: 1100px;
+    justify-content: center; /* to put div3 and div4 in middle */
+    display: flex;
+    padding: 50px;
+
+}
+/* to spread euall space between container/ div */
+.first_content_div, .second_content_pic_div{
+    flex: 1;                   
+    box-sizing: border-box;
+}
+
+
+.first_content_div{
+    background-color:#001276;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
+
+.second_content_pic_div{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.heropic{
+    max-width: 100%;
+    height: 433px;
+}
+
+
+
+.getAPIbtn, .mortgageCalculatorBtn{
+    border: none;
+    color: #001276;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.getAPIbtn:hover,.mortgageCalculatorBtn:hover{
+    background-color: #3696fc;
+    border: 2px solid black;;
+}
+.getAPIbtn{
+    height: 45px;
+    width: 110px;
+    border-radius: 20px;
+}
+
+.mortgageCalculatorBtn{
+    height: 45px;
+    width: 225px;
+    border-radius: 20px;
+    margin-left: 50;
+}
+
+
+/* all the CSS property for grid and other service */
+
+.tableDiv{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 120px 0 120;
+}
+
+.mainCard{
+    color: #fff;
+    background-color: #292b3d;
+    margin: 0 12 24 12;
+    padding: 25px 16 16 16;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.mainCard h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.mainCard p {
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cbccd1;
+    font-size: 16px;
+
+}
+
+.mainCard button {
+    color: #3696fc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161b2f;
+    border: 2px solid #3696fc;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.mainCard button:hover{
+    background-color: #3696fc; 
+    color: #fff;
+    border: 2px solid #161b2f;
+    border-color: #161b2f;
+}
+
+
+.mainCard i {
+    margin: 0 0px 8px 0px;
+}
+
+/* end of other service and grid */
+
+/* travel content */
+
+.grandparent_div{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.travel_parent_div{
+    justify-content: center;
+    background-color: #292b3d;
+    height: 433px;
+    width: 1200px;
+    align-items: center;
+    display: flex;
+}
+
+.child_div_img{
+    max-width: 100%;
+    
+}
+
+.child_div_content{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 0 110px;   
+    
+}
+.child_div_content h1{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 16px 0px;
+    
+}
+
+.child_div_content h3{
+    font-size: 24;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 16px 0px;
+}
+
+.child_div_content p{
+    color: #cbccd1;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.child_div_content button {
+    color: #3696fc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161b2f;
+    border: 2px solid #3696fc;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.child_div_content button:hover{
+    background-color: #3696fc; 
+    color: #fff;
+    border: 2px solid #161b2f;
+    border-color: #161b2f;
+}
+
+/* to spread euall space between container/ div */
+.child_div_img, .child_div_content{
+    flex: 1;                   
+    box-sizing: border-box;
+}
+
+.travel_pic{
+    max-width: 100%;
+    height: 433px;
+}
+
+
+.survey_parent_container{
+    display: flex;
+    padding: 0 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.great_britain_container, .northern_ireland_container{
+    flex: 1;                   
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+ /*  below code to resize the picture*/
+.great_britain_container img, .northern_ireland_container img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.great_britain_container h1, .northern_ireland_container h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.great_britain_container p, .northern_ireland_container p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.great_britain_container button, .northern_ireland_container button{
+    color: #3696fc;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161b2f;
+    border: 2px solid #3696fc;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+}
+
+.great_britain_container button:hover, .northern_ireland_container button:hover{
+    background-color: #3696fc; 
+    color: #fff;
+    border: 2px solid #161b2f;
+    border-color: #161b2f;
+}
+ 
+.northern_ireland_container button:hover, .great_britain_container button:hover{
+    opacity: 0.7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.02s;
+}
+
+.great_britain_container span, .northern_ireland_container span{
+    color: #cbccd1;
+    margin: 15px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer property below */
+
+.footer_div{
+    background-color: #292b3d;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 115px 30px 110px;
+}
+
+.footer_ourProud_div .footer_help_div .footer_information_div .footer_findUs_div{
+    flex: 1;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.footer_ourProud_div h1, .footer_help_div h1, .footer_information_div h1, .footer_findUs_div h1{
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.footer_ourProud_div a, .footer_help_div a, .footer_information_div a, .footer_findUs_div a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+
+.footer_ourProud_div a:hover
+,.footer_help_div a:hover
+,.footer_information_div a:hover
+,.footer_findUs_div a:hover{
+    opacity: 0.7;
+
+}
